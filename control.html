@@ -5,8 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mongs Inc</title>
+    <style>
+        body {
+            background-color: #181818;
+            color: #fff;
+        }
+        #stuff {
+            width: 100%;
+            height: 100%;
+            background-color: #0e0041;
+            color: #181818;
+            width: fit-content;
+            height: fit-content;
+            margin: auto;
+            padding: 10px;
+        }
+        div {
+            border: white;
+            border-style: solid;
+            border-width: 1px;
+        }
+        .Choices {
+            width: 100%;
+            height: 100%;
+            background-color: #035f9c;
+            color: #181818;
+            width: fit-content;
+            height: fit-content;
+            margin: auto;
+            padding: 10px;
+            align-content: center;
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="stuff">
+        <div class="Choices" id="SelectFixt">
+            <select>
+                <option label="room"></option>
+                <option label="stairs"></option>
+            </select>
+            <br><br>
+            <button id="SelectFixtButton">Select Fixture</button>
+        </div>
+        <div class="Choices" id="FX">
+            <select>
+                <option label="none"></option>
+                <option label="strobe"></option>
+                <option label="color"></option>
+                <option label="color strobe"></option>
+            </select>
+            <br><br>
+            <button id="FXButton">Select FX</button>
+        </div>
+    </div>
 </body>
 </html>
